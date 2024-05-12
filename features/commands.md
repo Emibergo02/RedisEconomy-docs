@@ -12,109 +12,42 @@ layout:
     visible: true
 ---
 
-# ▶️ Commands
+# ▶️ Player commands
 
-## 1 **Player Commands**
+### <mark style="color:orange;">`/balance`</mark>
 
-### /balance or /money
-
+Permission: `rediseconomy.balance`\
 Displays your balance (vault/default currency)\
-Permission: `rediseconomy.balance`
+Aliases: <mark style="color:orange;">`/money`</mark>
 
-### /balance (or /money) \<player> \[currencyName]
+### <mark style="color:orange;">`/balance <player> [currencyName]`</mark>
 
+Permission: <mark style="color:yellow;">`rediseconomy.balance.[currencyName]`</mark>\
 Displays \<player>'s balance\
-CurrencyName is the name of the currency to be displayed\
-Permission: `rediseconomy.balance.[currencyName]`
+CurrencyName is the name of the currency to be displayed
 
-### /pay \<player> \<amount> \[currencyName]
+### <mark style="color:orange;">`/pay <player> <amount> [currencyName]`</mark>
 
-Simple pay command but you can specify the currency\
-Permission: `rediseconomy.pay`
+Permission: <mark style="color:yellow;">`rediseconomy.pay`</mark>\
+Simple pay command but you can specify the currency
 
-### /pay \* \<amount> \[currencyName]
+### <mark style="color:orange;">`/pay * <amount> [currencyName]`</mark>
 
-Pay all players in your server \<amount> money\
-Permission: `rediseconomy.payall`
+Permission: <mark style="color:yellow;">`rediseconomy.payall`</mark>\
+Pay all players in your server \<amount> money
 
-### /balancetop (or /baltop) \<page> \[currencyName]
+### <mark style="color:orange;">`/balancetop <page> [currencyName]`</mark>
 
+Permission: <mark style="color:yellow;">`rediseconomy.balancetop`</mark>\
 Displays the top richest accounts (with vault/default currency)\
-Permission: `rediseconomy.balancetop`
+Aliases: <mark style="color:orange;">`/baltop`</mark>
 
-### /toggle-payments \<player or \* or all>
+### <mark style="color:orange;">`/toggle-payments <player or * or all>`</mark>
 
-Blocks payments incoming from \<player>\
-Permission: `rediseconomy.toggle-payments`
+Permission: <mark style="color:yellow;">`rediseconomy.toggle-payments`</mark>\
+Blocks payments incoming from \<player>
 
-### /toggle-payments
+### <mark style="color:orange;">`/toggle-payments`</mark>
 
 Shows blocked accounts list\
-Permission: `rediseconomy.toggle-payments`
-
-## **2 OP Commands**
-
-### /rediseconomy reload
-
-reloads config.yml\
-Permission: `rediseconomy.admin`
-
-### /rediseconomy editmessage \<configField>
-
-Edit a language field with a convenient web UI\
-Permission: `rediseconomy.admin.editmessage`
-
-### /balance \<player> \<currencyName> give \<amount> \[reason...]
-
-With "reason" you can specify why the transaction has been made\
-More on [transactions.md](../unique-features/transactions.md "mention")\
-Permission: `rediseconomy.balance`
-
-### /balance \<player> \<currency> take \<amount> \[/command... or reason...]&#x20;
-
-Takes money from a player.\
-It is possible to specify a command to execute if the player has sufficient funds.\
-If the command does not have the "/" it will be registered as the reason\
-Permission: `rediseconomy.balance`
-
-### /balance \<player> \<currency> set \<amount>
-
-Purely for moderation\
-Permission: `rediseconomy.balance`
-
-### /purge-balance \<player-regex>
-
-Purges the balance of the players matching the regex \
-ex. Steve(.\*) matches SteveCarell and Steve\_\
-**USE WITH CAUTION**\
-Permission: `rediseconomy.purge-balance`
-
-### /switch-currency \<currency> \<newcurrency>
-
-Switches all currency accounts with other currency accounts. You have to restart each instance of RedisEconomy to apply the changes\
-Permission: `rediseconomy.pay.currencyname`
-
-### /backup-economy \<filename>
-
-Backups the economy system to a file\
-Permission: `rediseconomy.admin.backup-restore`
-
-### /restore-economy \<filename>
-
-Restores the economy system from a file\
-Permission: `rediseconomy.admin.backup-restore`
-
-
-
-More commands are coming...\
-
-
-## **3 Further permissions:**
-
-### `rediseconomy.admin`
-
-Allows the use of all OP commands&#x20;
-
-## `rediseconomy.admin.giveall`
-
-Allows a player to give money to all online players through balance command with \*
+Permission: <mark style="color:orange;">`rediseconomy.toggle-payments`</mark>

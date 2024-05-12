@@ -20,6 +20,7 @@
 
 ## features
 
-* [▶️ Commands](features/commands.md)
+* [▶️ Player commands](features/commands.md)
+* [▶️ OP commands](features/commands-1.md)
 * [#️⃣ Placeholders](features/placeholders.md)
 * [📄 Configuration](features/configuration.md)
