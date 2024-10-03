@@ -28,19 +28,26 @@ Permission: <mark style="color:yellow;">`rediseconomy.admin.editmessage`</mark>
 
 With "reason" you can specify why the transaction has been made\
 More on [transactions.md](../unique-features/transactions.md "mention")\
-Permission: <mark style="color:yellow;">`rediseconomy.balance`</mark>
+Permission: <mark style="color:yellow;">`rediseconomy.admin`</mark>
 
 ### <mark style="color:orange;">`/balance <player> <currency> take <amount> [/command... or reason...]`</mark>
 
 Takes money from a player.\
 It is possible to specify a command to execute if the player has sufficient funds.\
 If the command does not have the "/" it will be registered as the reason\
-Permission: <mark style="color:yellow;">`rediseconomy.balance`</mark>
+Permission: <mark style="color:yellow;">`rediseconomy.admin`</mark>
 
 ### <mark style="color:orange;">`/balance <player> <currency> set <amount>`</mark>
 
 Purely for moderation\
-Permission: <mark style="color:yellow;">`rediseconomy.balance`</mark>
+Permission: <mark style="color:yellow;">`rediseconomy.admin`</mark>
+
+### <mark style="color:orange;">`/balance <player> <currency> set-max <amount>`</mark>
+
+Set the maximum balance for a player (useful for mana systems or similar)\
+The player deposits would be limited by max balance.\
+By default a currency has 1.7x10³⁰⁸ as limit\
+Permission: <mark style="color:yellow;">`rediseconomy.admin`</mark>
 
 ### <mark style="color:orange;">`/purge-balance <player-regex>`</mark>
 
