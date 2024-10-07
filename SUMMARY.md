@@ -4,6 +4,7 @@
 * [‼️ Requirements](requirements.md)
 * [📩 Installation](installation.md)
 * [❕ Links](links.md)
+* [Common issues](common-issues.md)
 
 ## FAQ
 
