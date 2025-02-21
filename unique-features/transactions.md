@@ -5,7 +5,7 @@ description: Register your currency movements and browse the transaction chain
 # 📜 Transactions
 
 You can search or reverse transactions.\
-Example:\\
+Example:
 
 <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Transaction visualization</p></figcaption></figure>
 
