@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # ▶️ OP commands
 
 ### <mark style="color:orange;">`/rediseconomy reload`</mark>
@@ -23,6 +9,12 @@ Permission: <mark style="color:yellow;">`rediseconomy.admin`</mark>
 
 Edit a language field with a convenient web UI\
 Permission: <mark style="color:yellow;">`rediseconomy.admin.editmessage`</mark>
+
+### <mark style="color:orange;">**`/browse-transactions <player> [beforedate] [afterdate]`**</mark>&#x20;
+
+View transactions of a player (you can navigate inside the browser: _all the playernames are clickable_**)**\
+Permission: <mark style="color:yellow;">`rediseconomy.admin.browse-transactions`</mark>\
+Dates format: <mark style="color:blue;">`yyyy-MM-dd_HH.mm.ss`</mark>
 
 ### <mark style="color:orange;">`/balance <player> <currencyName> give <amount> [reason...]`</mark>
 
@@ -71,7 +63,22 @@ Permission: <mark style="color:yellow;">`rediseconomy.admin.backup-restore`</mar
 Restores the economy system from a file\
 Permission: <mark style="color:yellow;">`rediseconomy.admin.backup-restore`</mark>
 
-More commands are coming...\\
+### <mark style="color:orange;">**`/transaction <player> <transaction-id> [revert]`**</mark>&#x20;
+
+Rollback a transaction with another transaction or just displays it without "revert" parameter\
+Permission: <mark style="color:yellow;">`rediseconomy.admin.transaction`</mark>
+
+### <mark style="color:orange;">**`/archive-transactions <filename>`**</mark>&#x20;
+
+Dump all transaction data to a file. Use it when your transaction db is too heavy\
+This is deprecated. It will be removed in the future after the `Transaction TTL Update`\
+Permission: <mark style="color:yellow;">`rediseconomy.admin.archive-transactions`</mark>
+
+### <mark style="color:orange;">`/rediseconomy test`</mark>
+
+Performs 10k transactions on 10 different bank accounts and tells the timings.\
+This serves as a benchmark to see if Redis can handle many transactions and if some performance tuning is needed on RedisEconomy configs\
+Permission: <mark style="color:yellow;">`rediseconomy.admin.editmessage`</mark>
 
 ## **Further permissions:**
 
