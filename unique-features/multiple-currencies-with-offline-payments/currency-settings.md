@@ -15,23 +15,23 @@ currencies:
   currencySingle: euro
   currencyPlural: euros
   decimalFormat: '#.##'
-  languageTag: en-US  #Some countries use "." instead of "," and vice-versa
+  languageTag: en-US
   startingBalance: 0.0
+  maxBalance: 1.0E14
   payTax: 0.0
+  saveTransactions: true
+  transactionsTTL: 0
   bankEnabled: true
   taxOnlyPay: false
+  executorThreads: 3
 ```
 {% endcode %}
 
-**CurrencySingle and CurrencyPlural** are tags appended at the end of an amount\
-For example, 1€ will be displayed `1euro` and 2€ will be displayed as `2euros`
-
-**decimalFormat** is how the amount is formatted based on [DecimalFormat](https://www.baeldung.com/java-decimalformat) formatting
-
-**payTax** is the relative percentage to charge on every transaction
-
-`10%` tax rate will be `0.1` . So if you put `1.0` as payTax the player will be taxed `100%` of the amount transferred!!!
-
-**bankEnabled** for Developers: enables the bank feature of [Vault's Economy class](https://github.com/MilkBowl/VaultAPI/blob/8bad2c479f531436b4b0694f5696b501d0afef3e/src/main/java/net/milkbowl/vault/economy/Economy.java#L45)
-
-**taxOnlyPay** enable if you want `payTax` to be applied only to the pay command or on both pay and balance command
+* **CurrencySingle and CurrencyPlural**: Tags used to display currency amounts. For example, `1€` is shown as `1euro`, and `2€` as `2euros`.
+* **decimalFormat**: Specifies the format of the amount based on DecimalFormat patterns.
+* **payTax**: The tax rate applied to transactions. A `10%` tax rate is represented as `0.1`. Setting `1.0` results in a `100%` tax.
+* **bankEnabled**: Enables the bank feature in Vault's Economy class for developers.
+* **taxOnlyPay**: If enabled, `payTax` applies only to the pay command; otherwise, it applies to both pay and balance commands.
+* **saveTransaction**: When enabled, transactions are recorded for every money movement.
+* **transactionTTL**: The time, in seconds, after which a transaction is removed from the system to keep the transaction database manageable.
+* **executorThreads**: The number of threads allocated to make balance modification (every account has a dedicated thread based on it's ID to keep thread-safety over balances)
