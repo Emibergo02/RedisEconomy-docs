@@ -4,7 +4,7 @@ description: Register your currency movements and browse the transaction chain
 
 # 📜 Transactions
 
-You can search or reverse transactions.\
+You can search or reverse transactions. \
 Example:
 
 <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Transaction visualization</p></figcaption></figure>
@@ -22,3 +22,7 @@ Example:
   Dates format: <mark style="color:blue;">`yyyy-MM-dd_HH.mm.ss`</mark>
 * <mark style="color:orange;">**`archive-transactions <filename>`**</mark> - Dump all transaction data to a file. Use it when your transaction db is too heavy\
   Permission: <mark style="color:orange;">`rediseconomy.admin.archive-transactions`</mark>
+
+
+
+(Check transactionTTL inside [currency-settings.md](multiple-currencies-with-offline-payments/currency-settings.md "mention") to unlock the full potential of transactions)
