@@ -1,24 +1,10 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # 🥇 Multiple currencies with offline payments
 
 ## Other plugins will use the "vault" currency (or the defined default one) through VaultAPI
 
 _It is not possible to delete the vault currency: it is the default one_
 
-**All currencies are Vault's Economy instances** \
+**All currencies are Vault's Economy instances**\
 (only the default one is registered into Vault economy service tho)
 
 ### All currencies support offline payments!

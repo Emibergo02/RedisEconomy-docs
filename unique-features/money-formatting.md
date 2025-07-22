@@ -1,30 +1,16 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # 🗳️ Money formatting
 
 ## 1 Amount formatting
 
 ### 1.1 Order of magnitude symbols
 
-You can use suffixes after the amount to specify if you want the amount to be parsed as thousands, millions, trillions or quadrillions. \
+You can use suffixes after the amount to specify if you want the amount to be parsed as thousands, millions, trillions or quadrillions.\
 By default it is:\
-&#x20;   \- `k` for thousands\
-&#x20;   \- `m` for millions\
-&#x20;   \- `b` for billions\
-&#x20;   \- `t` for trillions\
-&#x20;   \- `q` for quadrillions
+\- `k` for thousands\
+\- `m` for millions\
+\- `b` for billions\
+\- `t` for trillions\
+\- `q` for quadrillions
 
 So 10k will be 10000 and 0.1m will be 100000
 
